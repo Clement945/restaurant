@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Restaurant Saveur</title>
+</head>
+<body>
+<header>
+    <div class="barre">
+        <a class="logo" href="#accueil">SAVEUR</a>
+
+        <button type="button" class="menu-mobile"
+                aria-label="Menu de navigation"
+                aria-expanded="false"
+                aria-controls="navigation-principale">☰</button>
+
+        <nav id="navigation-principale" aria-label="Navigation principale">
+            <a href="#accueil">Accueil</a>
+            <a href="#histoire">Notre Histoire</a>
+            <a href="#menu">Menu</a>
+            <a href="#reservations">Réservations</a>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        <section id="accueil">
+            <h1>SAVEUR</h1>
+            <p>Un voyage culinaire à travers la cuisine française moderne</p>
+        </section>
+    </main>
+
+    <section id="histoire">
+    <div class="contenu">
+        <h2 class="titre-section">Notre Histoire</h2>
+
+        <p class="intro-histoire">
+            Niché au cœur de la ville, Saveur apporte l’essence de l’art culinaire français à votre table.
+            Notre engagement envers l’excellence se reflète dans chaque plat que nous servons,
+            alliant techniques traditionnelles et innovation moderne.
+        </p>
+
+     <div class="photos-histoire">
+            <img src="./images/paysage.jpg"
+              alt="Rivière bordée de sapins et de montagnes" loading="lazy">
+            <img src="./images/tarte.jpg"
+             alt="Tarte aux myrtilles et aux framboises" loading="lazy">
+        </div>
+    </div>
+</section>
+
+<section id="menu">
+    <div class="contenu">
+        <h2 class="titre-section">Menu</h2>
+
+        <section class="categorie-menu">
+            <h3>Entrées</h3>
+
+            <article class="plat">
+                <div>
+                    <h4>Soupe à l’Oignon</h4>
+                    <p>Oignons caramélisés, bouillon de bœuf, fromage gruyère</p>
+                </div>
+                <span class="prix">18 €</span>
+            </article>
+
+            <article class="plat">
+                <div>
+                    <h4>Foie Gras</h4>
+                    <p>Terrine de foie de canard, brioche, confiture de figues</p>
+                </div>
+                <span class="prix">24 €</span>
+            </article>
+        </section>
+
+        <section class="categorie-menu">
+            <h3>Plats Principaux</h3>
+
+            <article class="plat">
+                <div>
+                    <h4>Coq au Vin</h4>
+                    <p>Poulet braisé, sauce au vin rouge, petits oignons, champignons</p>
+                </div>
+                <span class="prix">38 €</span>
+            </article>
+
+            <article class="plat">
+                <div>
+                    <h4>Bœuf Bourguignon</h4>
+                    <p>Bœuf mijoté, réduction de vin rouge, légumes racines</p>
+                </div>
+                <span class="prix">42 €</span>
+            </article>
+        </section>
+    </div>
+</section>
+
+<section id="reservations">
+    <div class="contenu">
+        <h2 class="titre-section">Réservations</h2>
+
+        <p class="intro-reservation">
+            Pour les réservations, veuillez nous appeler ou réserver en ligne
+        </p>
+
+        <div class="infos-reservation">
+            <div>
+                <h3>Contact</h3>
+                <p>
+                    <a href="tel:+15551234567">+1 (555) 123-4567</a><br>
+                    <a href="mailto:info@saveur.com">info@saveur.com</a>
+                </p>
+            </div>
+
+            <div>
+                <h3>Horaires</h3>
+                <p>Mardi - Dimanche<br>17h30 - 22h00</p>
+            </div>
+        </div>
+
+        <form id="formulaire-reservation" method="post">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" autocomplete="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone" autocomplete="tel" required>
+
+            <label for="personnes">Nombre de personnes</label>
+            <select id="personnes" name="personnes" required>
+                <option value="" selected disabled>Sélectionnez</option>
+                <option value="1">1 personne</option>
+                <option value="2">2 personnes</option>
+                <option value="3">3 personnes</option>
+                <option value="4">4 personnes</option>
+                <option value="5">5 personnes</option>
+                <option value="6">6 personnes</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</section>
+
+<script src="./js/main.js" defer></script>
+
+
+
+</body>
+</html>
